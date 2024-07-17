@@ -12,8 +12,8 @@ import ProductDetails from "../pages/ProductDetails";
 
 const Routers = () => {
 
-  return <Routes>
-
+  return (
+  <Routes>
     <Route path="/" element={<Navigate to="home"/>}/>
     <Route path="home" element={<Home/>}/>
     <Route path="shop" element={<Shop/>}/>
@@ -22,8 +22,9 @@ const Routers = () => {
     <Route path="checkout" element={<Checkout/>}/>
     <Route path="login" element={<Login/>}/>
     <Route path="signup" element={<SignUp/>}/>
-    
   </Routes>
+
+  )
 
 }
 

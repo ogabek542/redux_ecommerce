@@ -1,0 +1,78 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+.nav__item a{
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav__icons {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    column-gap: 1.2rem !important;
+}
+.nav__icons span i {
+    font-size: 1.4rem !important;
+    color: var(--primary-color) !important;
+}
+.nav__icons span img {
+    width: 30px;
+    height: 30px;
+}
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+}
+.nav__active {
+    font-weight: 700 !important;
+
+}
+.cart__icon, .fav__icon {
+    position: relative !important;
+}
+.badge{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 28% !important;
+    right: -8% !important;
+    content: "" !important;
+    background:var(--primary-color);
+    color: #fff !important;
+    border-radius: 50% !important;
+    font-size: 0.5rem !important;
+    font-weight: 600 !important;
+    z-index: 10 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
