@@ -26,7 +26,6 @@ const Header = () => {
   return (
     <header className="header">
       <Container>
-        <Row>
           <div className="nav__wrapper">
             <div className="logo">
               <img src={Logo} alt="logo_image" />
@@ -69,15 +68,13 @@ const Header = () => {
                   alt="user_icon"
                 />
               </span>
-            </div>
-
-            <div className="mobile__menu">
+            </div> 
+          <div className="mobile__menu">
               <span>
                 <i className="ri-menu-line"></i>
               </span>
-            </div>
+            </div> 
           </div>
-        </Row>
       </Container>
     </header>
   );
