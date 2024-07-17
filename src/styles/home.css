@@ -31,3 +31,29 @@
 .hero__content {
     padding-top: 45px;
 }
+
+.section__title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.timer__count {
+    background:var(--primary-color);
+    height: 300px;
+
+}
+.timer__count img {
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+}
+.store_btn {
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.store_btn a:hover {
+    color: var(--primary-color);
+}
+.link__style {
+    text-decoration: none !important;
+}

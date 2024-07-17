@@ -3,19 +3,27 @@ import "./services.css"
 import { Container,Col,Row } from 'reactstrap'
 import { motion } from 'framer-motion'
 
+
+// import service data 
+import serviceData from "../assets/data/serviceData"
+
 const Services = () => {
   return <section className="services">
     <Container>
         <Row>
-            <Col lg="3" md="4">
-                    <div className="service__item">
-                        <span><i className='ri-truck-line'></i></span>
+            {serviceData.map((item,index) => (
+                <Col lg="3" md="4" key={index}>
+                    <motion.div whileHover={{scale:1.1}} className="service__item" style={{background:`${item.bg}`}}>
+                        <span>
+                            <i className={item.icon}></i>
+                        </span>
                         <div>
-                            <h3>Free Shipping</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h3>{item.title}</h3>
+                            <p>{item.subtitle}</p>
                         </div>
-                    </div>
-            </Col>
+                    </motion.div>
+                </Col>
+            ))}
         </Row>
     </Container>
   </section>
