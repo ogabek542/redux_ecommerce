@@ -57,3 +57,7 @@
 .link__style {
     text-decoration: none !important;
 }
+.mobile__container__div {
+    display: flex;
+    align-items: center;
+}
